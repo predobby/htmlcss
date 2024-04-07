@@ -1,0 +1,38 @@
+.more-header {
+    margin-top: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-header_title {
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+}
+
+.more-header_icons {
+    display: flex;
+    gap: 10px;
+}
+
+.more-icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.more-icon-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.more-icon span {
+    color: blue;
+    font-weight: 500;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar-column">
+            <span>okt</span>
+        </div>
+        <div class="status-bar-column">
+            <span>12:34</span>
+        </div>
+        <div class="status-bar-column">
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-half"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome">
+        <h2 class="welcome-title">Welcome To Our Company's Talk</h2>
+        <p class="welcome-text">If you have an employee card, log in with your employee number, password</p>
+    </header>
+   
+    <form action="coworkers.html" method="get" id="login-form">
+        <input name="username" type="text" required placeholder="Employee number"/>
+        <input name="password" type="password" required placeholder="Password"/>
+        <input type="submit" value="Log in"/>
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+    <script src="https://kit.fontawesome.com/238dfc385e.js" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

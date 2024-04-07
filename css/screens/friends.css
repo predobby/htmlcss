@@ -1,0 +1,99 @@
+.coworker-header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+}
+
+.coworker-header_title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: blue;
+}
+
+.coworker-header_icons {
+    display: flex;
+    gap: 15px;
+}
+
+#corkwers-display-link {
+    background-color: blue;
+    color: white;
+    display: block;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    padding: 0px 20px; 
+}
+
+#me {
+    padding: 20px 0px;
+    display: flex;
+    gap:20px;
+    border-bottom: 1px solid blue;
+
+}
+
+.me-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+}
+
+.me-name {
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.me-name span:last-child {
+    font-size:17px;
+    font-weight: 500;
+}
+#coworkers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.coworkers-top {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    font-weight: 600;
+
+}
+
+.coworkers-list {
+    display: flex;
+    gap: 20px;
+}
+.coworkers-list-img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.coworkers-list-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coworkers-list-name span:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}

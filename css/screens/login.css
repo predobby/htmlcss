@@ -1,0 +1,59 @@
+.welcome {
+    margin: 90px 0;
+    text-align: center;/*p나 h1등과 같이 텍스트들만 이루어져 있는 것에서는 display:flex; 할 필요 없이 text-align만 사용해도 됨!*/
+    display: flex;
+     flex-direction:column; 
+    /* welcome-header_text가 50%의 크기를 차지하며 중앙에 위치하게 하기 위해서는 display:flex를 써야한다.*/
+    align-items: center;
+    font-weight:bold ;
+}
+
+.welcome-title {
+    margin-bottom: 40px;
+    font-size:25px;
+}
+
+.welcome-text {
+    width: 60%;
+    text-align: center;
+    opacity: 0.6; /*opacity를 이용하면 투명도를 높여, 검정색을 회색으로 만들 수 있다.*/
+}
+
+#login-form {
+    display:flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+#login-form input {
+    border:none;
+    font-size: 18px;
+    padding:15px 0;
+    margin-bottom: 25px;
+}
+
+#login-form input::placeholder{ /*placeholder를 꾸밀 때는 input::placeholder를 사용한다.*/
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+    outline-color: blue;  /*클릭했을 때의 테두리를 outline이라고 한다.*/
+}
+
+#login-form input:not([type="submit"]){ /* []는 특정선택자*/
+    border-bottom: 1px solid rgba(0,0,0,0.2); /*rgba의 마지막 a는 opacity값을 나타낸다.*/
+    transition: border-color 0.3s ease-in-out; /*input타입이 submit이 아닐 때, border-bottom과 transition이 적용*/
+}
+
+#login-form input[type="submit"]{
+    background-color: blue;
+    color: white;
+    padding:20px;
+    border-radius:5px;
+}
+
+#login-form a {
+    text-align:center;
+    text-decoration: none; /*a태그의 밑줄을 없애준다.*/
+    font-size: 13px;
+}

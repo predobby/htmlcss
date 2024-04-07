@@ -1,0 +1,12 @@
+.status-bar {
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 3px;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+.status-bar-column {width:33%;}
+.status-bar-column:first-child span {margin-right:5px;}
+.status-bar-column:nth-child(2) {display:flex; justify-content: center;}
+.status-bar-column:last-child {display:flex; justify-content: center; gap:10px; align-items: center;}

@@ -1,0 +1,58 @@
+.nav {
+    background-color: blue;
+    color: white;
+    padding:20px 50px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    position: fixed; /*스크롤하더라도 위치가 고정되어 있게 하기 위함*/
+    bottom: 0; /*아래쪽에 위치하게 하기 위함*/
+    width:100%;
+    box-sizing: border-box; /*box-sizing:border-box는 css에게 "내가 paddding을 줘도 신경쓰지마. 내 box size를 늘리지 말아줘"라고 하는 것이다.
+     이것을 설정하지 않으면, 아이콘이 화면 밖으로 나가버린다. box size가 100%로 설정되어 있는데, padding 50px을 추가하면 100%+100px이 width가 되기 때문이다.*/
+}
+.nav_ul{display:flex; justify-content:  space-between;}
+
+/* 기본적으로 링크는 모두 파란색에 밑줄이 있기 때문에, 아이콘의 색상과 밑줄을 없애기 위해서 reset.css에 a태그의 정보를 추가한다.*/
+
+.nav_link {
+    color: #2e363e;
+    position:relative;
+}
+
+.nav_notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px; /*원을 만들기 위해서는 width의 절반만큼을 주어야 한다. 혹은 그냥 50%로 주어도 된다.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight:bold;
+    position:absolute; /*숫자가 아이콘 위에 오도록 하기 위함.*/ /*position:absolute를 사용하기 위해서는 부모태그에 position:relative;가 있어야만 한다.*/
+    left: 15px;
+    bottom: 15px; /*부모 태그에 position:relative;를 안써주면 body에서 left, bottom이 작동한다.*/
+}
+
+.nav_notification2 {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position:absolute; /*position:absolute를 사용하기 위해서는 부모태그에 position:relative;가 있어야만 한다.*/
+    left: 30px;
+    top: -10px; /*부모 태그에 position:relative;를 안써주면 body에서 left, top이 작동한다.*/
+}
+
+.coworkers-header_icons {
+    position: relative;
+}
+
+.nav_notification3 {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position:absolute; /*position:absolute를 사용하기 위해서는 부모태그에 position:relative;가 있어야만 한다.*/
+    right:-5px;
+    top: -10px; /*부모 태그에 position:relative;를 안써주면 body에서 left, top이 작동한다.*/
+}
